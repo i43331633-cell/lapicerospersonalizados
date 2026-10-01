@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Lapiceros Personalizados</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f7fb;
+      color: #222;
+    }
+
+    header {
+      background: #6c5ce7;
+      color: white;
+      text-align: center;
+      padding: 35px 20px;
+    }
+
+    header h1 {
+      font-size: 35px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+    }
+
+    nav {
+      background: white;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 8px #ccc;
+    }
+
+    nav a {
+      color: #6c5ce7;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 12px;
+    }
+
+    .inicio {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .inicio h2 {
+      font-size: 30px;
+      margin-bottom: 15px;
+      color: #6c5ce7;
+    }
+
+    .inicio p {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .boton {
+      display: inline-block;
+      background: #25d366;
+      color: white;
+      padding: 14px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .productos {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .productos h2 {
+      color: #6c5ce7;
+      margin-bottom: 30px;
+      font-size: 30px;
+    }
+
+    .catalogo {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+
+    .producto {
+      background: white;
+      width: 280px;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px #ddd;
+    }
+
+    .producto .imagen {
+      height: 170px;
+      background: #eee;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 70px;
+      margin-bottom: 15px;
+    }
+
+    .producto h3 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .producto p {
+      margin-bottom: 10px;
+      color: #666;
+    }
+
+    .precio {
+      font-size: 22px;
+      color: #6c5ce7;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .personaliza {
+      background: #eeeaff;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .personaliza h2 {
+      color: #6c5ce7;
+      margin-bottom: 20px;
+    }
+
+    .personaliza p {
+      max-width: 600px;
+      margin: auto;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .contacto {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .contacto h2 {
+      color: #6c5ce7;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 28px;
+      }
+
+      .producto {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🖊️ Lapiceros Personalizados</h1>
+    <p>Haz que tu lapicero sea único</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#catalogo">Catálogo</a>
+    <a href="#personaliza">Personaliza</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section class="inicio" id="inicio">
+    <h2>Lapiceros hechos para ti</h2>
+
+    <p>
+      Personaliza tus lapiceros con tu nombre, frase,
+      diseño o logo favorito.
+    </p>
+
+    <a class="boton"
+       href="https://wa.me/51999999999?text=Hola,%20quiero%20pedir%20un%20lapicero%20personalizado">
+       📱 Pedir por WhatsApp
+    </a>
+  </section>
+
+  <section class="productos" id="catalogo">
+
+    <h2>🛍️ Nuestro Catálogo</h2>
+
+    <div class="catalogo">
+
+      <div class="producto">
+        <div class="imagen">🖊️</div>
+        <h3>Lapicero Clásico</h3>
+        <p>Personalizado con tu nombre.</p>
+        <div class="precio">S/ 5.00</div>
+
+        <a class="boton"
+           href="https://wa.me/51999999999?text=Quiero%20el%20Lapicero%20Clásico">
+           Comprar
+        </a>
+      </div>
+
+      <div class="producto">
+        <div class="imagen">✨</div>
+        <h3>Lapicero Premium</h3>
+        <p>Diseño elegante y personalizado.</p>
+        <div class="precio">S/ 8.00</div>
+
+        <a class="boton"
+           href="https://wa.me/51999999999?text=Quiero%20el%20Lapicero%20Premium">
+           Comprar
+        </a>
+      </div>
+
+      <div class="producto">
+        <div class="imagen">💖</div>
+        <h3>Lapicero Especial</h3>
+        <p>Ideal para regalos y ocasiones especiales.</p>
+        <div class="precio">S/ 10.00</div>
+
+        <a class="boton"
+           href="https://wa.me/51999999999?text=Quiero%20el%20Lapicero%20Especial">
+           Comprar
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="personaliza" id="personaliza">
+
+    <h2>🎨 Personaliza tu lapicero</h2>
+
+    <p>
+      Puedes elegir el color, agregar tu nombre,
+      una frase especial, un dibujo o el logo de tu negocio.
+      ¡Creamos un diseño pensado para ti!
+    </p>
+
+  </section>
+
+  <section class="contacto" id="contacto">
+
+    <h2>📞 Contáctanos</h2>
+
+    <p>¿Quieres hacer un pedido?</p>
+    <br>
+
+    <a class="boton"
+       href="https://wa.me/51999999999?text=Hola,%20quiero%20información%20sobre%20los%20lapiceros">
+       💬 Escribir por WhatsApp
+    </a>
+
+  </section>
+
+  <footer>
+    <p>© 2026 Lapiceros Personalizados</p>
+    <p>Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
